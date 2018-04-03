@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${BUILD_TOOLS_GRADLE_VERSION}"
+        classpath "com.neenbedankt.gradle.plugins:android-apt:${ANDROID_APT_VERSION}"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:${MAVEN_PLUGIN_VERSION}"
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:${BINTRAY_PLUGIN_VERSION}"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "http://dl.bintray.com/jfrog/jfrog-jars" }
+        maven { url "https://jitpack.io" }
+    }
+}

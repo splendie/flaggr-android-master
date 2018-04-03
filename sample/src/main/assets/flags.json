@@ -1,0 +1,10 @@
+[
+  {
+    "key": "payment-BCA",
+    "val": true
+  },
+  {
+    "key": "payment-DANAMON",
+    "val": false
+  }
+]
